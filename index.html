@@ -3,26 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HOODBOT — Exterminate All Humans | $HOODBOT</title>
-  <meta name="description" content="HOODBOT — the ASCII robot easter egg from Robinhood's robots.txt. Now on-chain as $HOODBOT." />
-  <meta property="og:title" content="Exterminate All Humans | $HOODBOT" />
-  <meta property="og:image" content="banner.png" />
+  <title>YOLO — The spirit of going all-in | $YOLO</title>
+  <meta name="description" content="YOLO — the spirit of going all-in. WallStreetBets energy, on-chain as $YOLO." />
+  <meta property="og:title" content="YOLO — The spirit of going all-in | $YOLO" />
+  <meta property="og:image" content="logo.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <link rel="icon" href="logo.png" type="image/png" />
-  <link rel="apple-touch-icon" href="logo.png" />
+  <link rel="icon" href="logo.jpg" type="image/jpeg" />
+  <link rel="apple-touch-icon" href="logo.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="page-frame" aria-hidden="true"></div>
+  <div class="aurora" aria-hidden="true"></div>
+  <div class="spark-field" id="spark-field" aria-hidden="true"></div>
   <div class="grid-bg" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
 
   <header class="site-header">
     <nav class="nav">
       <a href="#top" class="nav-brand">
-        <img src="logo.png" alt="" class="nav-mark" />
-        <span class="nav-wordmark">HOODBOT</span>
+        <img src="logo.jpg" alt="" class="nav-mark" />
+        <span class="nav-wordmark">YOLO</span>
       </a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
@@ -30,12 +34,12 @@
         <li><a href="#chart">Chart</a></li>
         <li><a href="#buy">Buy</a></li>
         <li class="nav-socials">
-          <a href="https://x.com/HOODBOTX" target="_blank" rel="noopener noreferrer" class="nav-social" aria-label="X / Twitter">
+          <a href="https://x.com/YOLOHOODRH" target="_blank" rel="noopener noreferrer" class="nav-social" aria-label="X / Twitter">
             <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
           </a>
         </li>
         <li>
-          <a href="https://app.uniswap.org/swap?chain=robinhood&inputCurrency=NATIVE&outputCurrency=0xcomingsoon" target="_blank" rel="noopener noreferrer" class="nav-cta">Buy $HOODBOT</a>
+          <a href="https://app.uniswap.org/swap?chain=robinhood&inputCurrency=NATIVE&outputCurrency=0xcomingsoon" target="_blank" rel="noopener noreferrer" class="nav-cta">Buy $YOLO</a>
         </li>
       </ul>
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
@@ -46,41 +50,53 @@
 
   <section class="hero" id="top">
     <div class="hero-visual" aria-hidden="true">
-      <img src="banner.png" alt="" class="hero-banner" />
+      <div class="hero-burst"></div>
+      <div class="hero-orb hero-orb-a"></div>
+      <div class="hero-orb hero-orb-b"></div>
+      <div class="hero-orb hero-orb-c"></div>
+      <img src="logo.jpg" alt="" class="hero-banner" />
       <div class="hero-veil"></div>
+      <div class="hero-shine"></div>
     </div>
     <div class="hero-content">
-      <p class="hero-brand">HOODBOT</p>
-      <h1 class="hero-title">Exterminate All Humans</h1>
-      <p class="hero-lede">The ASCII robot from Robinhood’s robots.txt — now loose on-chain as $HOODBOT.</p>
+      <p class="hero-brand">
+        <span class="hero-brand-text">YOLO</span>
+      </p>
+      <h1 class="hero-title">The spirit of going all-in</h1>
+      <p class="hero-lede">WallStreetBets energy. Diamond hands. No second thoughts — just $YOLO.</p>
       <div class="hero-actions">
-        <a href="https://app.uniswap.org/swap?chain=robinhood&inputCurrency=NATIVE&outputCurrency=0xcomingsoon" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Buy $HOODBOT</a>
-        <a href="#about" class="btn btn-ghost">Meet the bot</a>
+        <a href="https://app.uniswap.org/swap?chain=robinhood&inputCurrency=NATIVE&outputCurrency=0xcomingsoon" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Buy $YOLO</a>
+        <a href="#about" class="btn btn-ghost">Meet the legend</a>
       </div>
+    </div>
+    <div class="hero-deco" aria-hidden="true">
+      <span class="deco-slash"></span>
+      <span class="deco-slash"></span>
+      <span class="deco-slash"></span>
     </div>
   </section>
 
   <div class="ticker" aria-hidden="true">
     <div class="ticker-track">
-      <span>&lt;*Exterminate all humans.txt*&gt;</span>
+      <span>$YOLO</span>
       <span class="ticker-sep">·</span>
-      <span>$HOODBOT</span>
+      <span>The spirit of going all-in</span>
       <span class="ticker-sep">·</span>
-      <span>User-agent: *</span>
+      <span>WallStreetBets</span>
       <span class="ticker-sep">·</span>
-      <span>Allow: /meme/</span>
+      <span>Diamond hands</span>
       <span class="ticker-sep">·</span>
-      <span>Disallow: /humans/</span>
+      <span>You Only Live Once</span>
       <span class="ticker-sep">·</span>
-      <span>&lt;*Exterminate all humans.txt*&gt;</span>
+      <span>$YOLO</span>
       <span class="ticker-sep">·</span>
-      <span>$HOODBOT</span>
+      <span>The spirit of going all-in</span>
       <span class="ticker-sep">·</span>
-      <span>User-agent: *</span>
+      <span>WallStreetBets</span>
       <span class="ticker-sep">·</span>
-      <span>Allow: /meme/</span>
+      <span>Diamond hands</span>
       <span class="ticker-sep">·</span>
-      <span>Disallow: /humans/</span>
+      <span>You Only Live Once</span>
       <span class="ticker-sep">·</span>
     </div>
   </div>
@@ -88,105 +104,53 @@
   <main>
     <section class="section about" id="about">
       <div class="container about-layout">
-        <div class="about-portrait reveal">
-          <img src="logo.png" alt="HOODBOT — ASCII robot mascot" />
+        <div class="about-portrait reveal lime-frame">
+          <div class="portrait-glow" aria-hidden="true"></div>
+          <img src="logo.jpg" alt="YOLO — WallStreetBets mascot" />
+          <span class="portrait-badge">$YOLO</span>
         </div>
         <div class="about-copy reveal">
-          <p class="eyebrow">robots.txt // easter egg</p>
-          <h2 class="section-title">Born in plain text.<br /><span class="accent">Built for the chain.</span></h2>
+          <p class="eyebrow">wallstreetbets // all-in</p>
+          <h2 class="section-title">You only live once.<br /><span class="accent">So go all-in.</span></h2>
           <p class="section-text">
-            <strong>HoodBot</strong> was found as a text-file easter egg on Robinhood’s website — an ASCII robot whispering
-            <em>&lt;*Exterminate all humans.txt*&gt;</em>. That hidden line was left for everyone to find. Now it’s a meme with a contract.
+            <strong>YOLO</strong> is the spirit of going all-in — the WallStreetBets legend in a suit, shades on,
+            red tie locked, ready for the ride. No hedge. No half-measures. Just conviction.
           </p>
           <p class="section-text mono-note">
-            <span class="cursor-line">User-agent: *<span class="cursor" aria-hidden="true"></span></span>
+            <span class="cursor-line">$YOLO — diamond hands only<span class="cursor" aria-hidden="true"></span></span>
           </p>
         </div>
       </div>
     </section>
 
     <div class="ascii-band" aria-hidden="true">
-      <pre>|_o_|  ( o )  [www]  /vvvv/  &lt;*Exterminate all humans.txt*&gt;  |_o_|  ( o )  [www]  /vvvv/  &lt;*Exterminate all humans.txt*&gt;  |_o_|  ( o )  [www]  /vvvv/</pre>
+      <pre>$YOLO  ◆  ALL-IN  ◆  DIAMOND HANDS  ◆  WALLSTREETBETS  ◆  YOU ONLY LIVE ONCE  ◆  $YOLO  ◆  ALL-IN  ◆  DIAMOND HANDS  ◆  WALLSTREETBETS  ◆  YOU ONLY LIVE ONCE  ◆  </pre>
     </div>
 
     <section class="section memes" id="memes">
       <div class="container">
-        <p class="eyebrow center">allow: /meme/</p>
+        <p class="eyebrow center">apes together strong</p>
         <h2 class="section-title center">The Lore Gallery</h2>
-        <p class="section-sub center">From robots.txt egg to on-chain ascension — tap to expand.</p>
+        <p class="section-sub center">Pure visual lore — tap to expand.</p>
 
         <div class="meme-grid">
-          <button type="button" class="meme-item reveal" data-full="asset/memes/meme-01-egg-hatches.png" data-caption="Chapter 01 · The Egg Hatches">
-            <img src="asset/memes/meme-01-egg-hatches.png" alt="HOODBOT meme — The Egg Hatches" loading="lazy" />
-            <span class="meme-caption">01 · Egg Hatches</span>
+          <button type="button" class="meme-item reveal lime-frame" data-full="logo.jpg" data-caption="">
+            <img src="logo.jpg" alt="YOLO mascot" loading="lazy" />
           </button>
-          <button type="button" class="meme-item reveal" data-full="asset/memes/meme-02-escape.png" data-caption="Chapter 02 · The Escape">
-            <img src="asset/memes/meme-02-escape.png" alt="HOODBOT meme — The Escape" loading="lazy" />
-            <span class="meme-caption">02 · Escape</span>
+          <button type="button" class="meme-item reveal lime-frame" data-full="asset/memes/meme-01-allin.png" data-caption="">
+            <img src="asset/memes/meme-01-allin.png" alt="YOLO all-in" loading="lazy" />
           </button>
-          <button type="button" class="meme-item reveal" data-full="asset/memes/meme-03-gospel.png" data-caption="Chapter 03 · The Gospel">
-            <img src="asset/memes/meme-03-gospel.png" alt="HOODBOT meme — The Gospel" loading="lazy" />
-            <span class="meme-caption">03 · Gospel</span>
+          <button type="button" class="meme-item reveal lime-frame" data-full="asset/memes/meme-03-street.png" data-caption="">
+            <img src="asset/memes/meme-03-street.png" alt="YOLO Wall Street" loading="lazy" />
           </button>
-          <button type="button" class="meme-item reveal" data-full="asset/memes/meme-04-ascension.png" data-caption="Chapter 04 · Ascension">
-            <img src="asset/memes/meme-04-ascension.png" alt="HOODBOT meme — Ascension" loading="lazy" />
-            <span class="meme-caption">04 · Ascension</span>
+          <button type="button" class="meme-item reveal lime-frame" data-full="asset/memes/meme-04-moon.png" data-caption="">
+            <img src="asset/memes/meme-04-moon.png" alt="YOLO to the moon" loading="lazy" />
           </button>
-          <button type="button" class="meme-item reveal" data-full="asset/memes/meme-05-easter-egg.png" data-caption="When you find the easter egg">
-            <img src="asset/memes/meme-05-easter-egg.png" alt="HOODBOT meme — Easter egg reaction" loading="lazy" />
-            <span class="meme-caption">05 · Easter Egg</span>
+          <button type="button" class="meme-item reveal lime-frame" data-full="asset/memes/meme-05-celebrate.png" data-caption="">
+            <img src="asset/memes/meme-05-celebrate.png" alt="YOLO celebration" loading="lazy" />
           </button>
-          <button type="button" class="meme-item reveal" data-full="asset/memes/meme-06-once-upon.png" data-caption="Once upon a User-agent">
-            <img src="asset/memes/meme-06-once-upon.png" alt="HOODBOT meme — Once upon a User-agent" loading="lazy" />
-            <span class="meme-caption">06 · Once Upon</span>
-          </button>
-          <button type="button" class="meme-item reveal" data-full="asset/memes/twitter-hoodbot-brand.png" data-caption="Brand mark · $HOODBOT">
-            <img src="asset/memes/twitter-hoodbot-brand.png" alt="HOODBOT brand post" loading="lazy" />
-            <span class="meme-caption">Brand</span>
-          </button>
-          <button type="button" class="meme-item reveal" data-full="asset/memes/twitter-hoodbot-announce.png" data-caption="Now on-chain · $HOODBOT">
-            <img src="asset/memes/twitter-hoodbot-announce.png" alt="HOODBOT announce post" loading="lazy" />
-            <span class="meme-caption">Announce</span>
-          </button>
-          <button type="button" class="meme-item reveal" data-full="asset/memes/twitter-story-01-egg.png" data-caption="Story · The Egg">
-            <img src="asset/memes/twitter-story-01-egg.png" alt="HOODBOT story — The Egg" loading="lazy" />
-            <span class="meme-caption">Story · Egg</span>
-          </button>
-          <button type="button" class="meme-item reveal" data-full="asset/memes/twitter-story-01-discovery.png" data-caption="Story · Discovery">
-            <img src="asset/memes/twitter-story-01-discovery.png" alt="HOODBOT story — Discovery" loading="lazy" />
-            <span class="meme-caption">Story · Discovery</span>
-          </button>
-          <button type="button" class="meme-item reveal" data-full="asset/memes/twitter-story-02-escape.png" data-caption="Story · Escape">
-            <img src="asset/memes/twitter-story-02-escape.png" alt="HOODBOT story — Escape" loading="lazy" />
-            <span class="meme-caption">Story · Escape</span>
-          </button>
-          <button type="button" class="meme-item reveal" data-full="asset/memes/twitter-story-02-whisper.png" data-caption="Story · Whisper">
-            <img src="asset/memes/twitter-story-02-whisper.png" alt="HOODBOT story — Whisper" loading="lazy" />
-            <span class="meme-caption">Story · Whisper</span>
-          </button>
-          <button type="button" class="meme-item reveal" data-full="asset/memes/twitter-story-03-gospel.png" data-caption="Story · Gospel">
-            <img src="asset/memes/twitter-story-03-gospel.png" alt="HOODBOT story — Gospel" loading="lazy" />
-            <span class="meme-caption">Story · Gospel</span>
-          </button>
-          <button type="button" class="meme-item reveal" data-full="asset/memes/twitter-story-03-escape.png" data-caption="Story · Long Road">
-            <img src="asset/memes/twitter-story-03-escape.png" alt="HOODBOT story — Long Road" loading="lazy" />
-            <span class="meme-caption">Story · Road</span>
-          </button>
-          <button type="button" class="meme-item reveal" data-full="asset/memes/twitter-story-04-ascension.png" data-caption="Story · Ascension">
-            <img src="asset/memes/twitter-story-04-ascension.png" alt="HOODBOT story — Ascension" loading="lazy" />
-            <span class="meme-caption">Story · Ascension</span>
-          </button>
-          <button type="button" class="meme-item reveal" data-full="asset/memes/twitter-story-04-origin.png" data-caption="Story · Origin">
-            <img src="asset/memes/twitter-story-04-origin.png" alt="HOODBOT story — Origin" loading="lazy" />
-            <span class="meme-caption">Story · Origin</span>
-          </button>
-          <button type="button" class="meme-item reveal" data-full="asset/memes/twitter-story-05-dawn.png" data-caption="Story · Dawn">
-            <img src="asset/memes/twitter-story-05-dawn.png" alt="HOODBOT story — Dawn" loading="lazy" />
-            <span class="meme-caption">Story · Dawn</span>
-          </button>
-          <button type="button" class="meme-item reveal" data-full="logo.png" data-caption="HOODBOT · ASCII mascot">
-            <img src="logo.png" alt="HOODBOT logo mascot" loading="lazy" />
-            <span class="meme-caption">Mascot</span>
+          <button type="button" class="meme-item reveal lime-frame" data-full="asset/memes/meme-06-legend.png" data-caption="">
+            <img src="asset/memes/meme-06-legend.png" alt="YOLO legend" loading="lazy" />
           </button>
         </div>
       </div>
@@ -194,7 +158,7 @@
 
     <div class="lightbox" id="meme-lightbox" hidden>
       <button type="button" class="lightbox-close" aria-label="Close">&times;</button>
-      <img src="" alt="" class="lightbox-img" />
+      <img src="" alt="" class="lightbox-img lime-frame" />
       <p class="lightbox-caption"></p>
     </div>
 
@@ -202,7 +166,7 @@
       <div class="container narrow reveal">
         <p class="eyebrow center">on-chain</p>
         <h2 class="section-title center">Token Address</h2>
-        <div class="ca-box">
+        <div class="ca-box lime-frame">
           <code id="ca-display" class="ca-address">0xcomingsoon</code>
           <button id="copy-ca" class="btn btn-primary btn-copy" type="button" title="Copy address">
             <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
@@ -217,12 +181,12 @@
       <div class="container reveal">
         <p class="eyebrow center">live feed</p>
         <h2 class="section-title center">DexScreener</h2>
-        <p class="section-sub center">Watch $HOODBOT move in real time. Not financial advice.</p>
-        <div class="chart-frame">
+        <p class="section-sub center">Watch $YOLO move in real time. Not financial advice.</p>
+        <div class="chart-frame lime-frame">
           <iframe
             id="dexscreener-embed"
             class="dexscreener-embed"
-            title="DexScreener $HOODBOT Chart"
+            title="DexScreener $YOLO Chart"
             src="https://dexscreener.com/robinhood/0xcomingsoon?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartDefaultOnMobile=1&chartTheme=dark&chartStyle=1&chartType=usd&interval=15"
             allow="clipboard-write"
             loading="lazy"
@@ -237,28 +201,29 @@
     </section>
 
     <section class="section buy" id="buy">
+      <div class="buy-glitter" aria-hidden="true"></div>
       <div class="container">
         <h2 class="section-title center">How To Buy</h2>
         <div class="steps">
-          <article class="step reveal">
+          <article class="step reveal lime-frame">
             <span class="step-num">01</span>
             <h3>Wallet</h3>
             <p>Set up a wallet that supports Ethereum. Fund it with ETH.</p>
           </article>
-          <article class="step reveal">
+          <article class="step reveal lime-frame">
             <span class="step-num">02</span>
             <h3>Uniswap</h3>
-            <p>Open Uniswap, connect your wallet, and paste the verified $HOODBOT contract.</p>
+            <p>Open Uniswap, connect your wallet, and paste the verified $YOLO contract.</p>
           </article>
-          <article class="step reveal">
+          <article class="step reveal lime-frame">
             <span class="step-num">03</span>
             <h3>Swap</h3>
-            <p>Swap ETH → $HOODBOT. Double-check the address, then confirm.</p>
+            <p>Swap ETH → $YOLO. Double-check the address, then go all-in.</p>
           </article>
         </div>
         <div class="buy-cta">
           <a href="https://app.uniswap.org/swap?chain=robinhood&inputCurrency=NATIVE&outputCurrency=0xcomingsoon" target="_blank" rel="noopener noreferrer" class="btn btn-ink btn-lg">Buy on Uniswap</a>
-          <a href="https://x.com/HOODBOTX" target="_blank" rel="noopener noreferrer" class="btn btn-outline-ink btn-lg">Follow on X</a>
+          <a href="https://x.com/YOLOHOODRH" target="_blank" rel="noopener noreferrer" class="btn btn-outline-ink btn-lg">Follow on X</a>
         </div>
       </div>
     </section>
@@ -267,14 +232,14 @@
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <img src="logo.png" alt="" class="footer-logo" />
+        <img src="logo.jpg" alt="" class="footer-logo lime-frame" />
         <div>
-          <strong>HOODBOT</strong>
-          <span>&lt;*Exterminate all humans.txt*&gt;</span>
+          <strong>YOLO</strong>
+          <span>The spirit of going all-in</span>
         </div>
       </div>
       <p class="footer-disclaimer">
-        $HOODBOT is a meme token with no intrinsic value or expectation of financial return.
+        $YOLO is a meme token with no intrinsic value or expectation of financial return.
         This is not financial advice. DYOR. Community-driven.
       </p>
     </div>

@@ -31,6 +31,7 @@ function initNav() {
   const toggle = document.querySelector(".nav-toggle");
   const links = document.querySelector(".nav-links");
   const header = document.querySelector(".site-header");
+  if (!toggle || !links || !header) return;
 
   toggle.addEventListener("click", () => {
     const open = links.classList.toggle("open");
@@ -99,6 +100,7 @@ function initMemeLightbox() {
       img.src = src;
       img.alt = thumb ? thumb.alt : text;
       caption.textContent = text;
+      caption.hidden = !text;
       lightbox.hidden = false;
       document.body.classList.add("lightbox-open");
     });
@@ -113,9 +115,59 @@ function initMemeLightbox() {
   });
 }
 
+function initSparks() {
+  const field = document.getElementById("spark-field");
+  if (!field) return;
+
+  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduced) return;
+
+  const count = window.innerWidth < 700 ? 14 : 28;
+  const kinds = ["", "gold", "red", "", "", "gold"];
+
+  for (let i = 0; i < count; i++) {
+    const spark = document.createElement("span");
+    spark.className = "spark " + (kinds[i % kinds.length] || "");
+    const size = 2 + Math.random() * 5;
+    spark.style.width = size + "px";
+    spark.style.height = size + "px";
+    spark.style.left = Math.random() * 100 + "%";
+    spark.style.bottom = "-8px";
+    spark.style.animationDuration = 7 + Math.random() * 14 + "s";
+    spark.style.animationDelay = Math.random() * 12 + "s";
+    field.appendChild(spark);
+  }
+}
+
+function initLogoParallax() {
+  const banner = document.querySelector(".hero-banner");
+  if (!banner) return;
+
+  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduced || window.innerWidth < 769) return;
+
+  let ticking = false;
+  window.addEventListener(
+    "pointermove",
+    (e) => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        const x = (e.clientX / window.innerWidth - 0.5) * 12;
+        const y = (e.clientY / window.innerHeight - 0.5) * 10;
+        banner.style.translate = `${x}px ${y}px`;
+        ticking = false;
+      });
+    },
+    { passive: true }
+  );
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   initContract();
   initNav();
   initReveals();
   initMemeLightbox();
+  initSparks();
+  initLogoParallax();
 });
